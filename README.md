@@ -2,16 +2,16 @@ Here’s a **clean, recruiter-friendly README file** you can use for your **Data
 
 ---
 
-# 📊 Data Analysis Project
+# Data Analysis Project
 
-## 🧾 Overview
+## Overview
 
 This project demonstrates the **end-to-end data analysis process**, from data exploration to visualization and reporting.
 The goal is to extract meaningful insights from raw data using **Python, SQL, and Power BI**, and communicate the findings through an **interactive dashboard and presentation report**.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 * The dataset used in this project contains records related to customer behavior, sales, and transactions.
 * Format: `.csv` file
@@ -25,7 +25,7 @@ The goal is to extract meaningful insights from raw data using **Python, SQL, an
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 * **Python** (for data cleaning and EDA)
 
@@ -37,7 +37,7 @@ The goal is to extract meaningful insights from raw data using **Python, SQL, an
 
 ---
 
-## 🔍 Steps & Workflow
+## Steps & Workflow
 
 1. **Data Loading & Inspection**
 
@@ -79,7 +79,7 @@ The goal is to extract meaningful insights from raw data using **Python, SQL, an
 
 ---
 
-## 📈 Dashboard Overview
+## Dashboard Overview
 
 The Power BI dashboard includes:
 
@@ -91,7 +91,7 @@ The Power BI dashboard includes:
 
 ---
 
-## 🧠 Results & Insights
+## Results & Insights
 
 * Identified key customer segments driving majority of revenue
 * Discovered seasonal patterns affecting sales
@@ -99,7 +99,7 @@ The Power BI dashboard includes:
 
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 1. **Clone the repository**
 
@@ -139,27 +139,5 @@ The Power BI dashboard includes:
 
 ---
 
-## 📚 Project Structure
 
-```
-📁 data-analysis-project/
-│
-├── data/
-│   └── dataset.csv
-│
-├── notebooks/
-│   └── data_analysis.ipynb
-│
-├── sql/
-│   └── queries.sql
-│
-├── dashboard/
-│   └── PowerBI_Dashboard.pbix
-│
-├── report/
-│   ├── Analysis_Report.pdf
-│   └── Gamma_Presentation_Link.txt
-│
-├── requirements.txt
-└── README.md
 
