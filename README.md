@@ -1,7 +1,3 @@
-Here’s a **clean, recruiter-friendly README file** you can use for your **Data Analysis Project** 👇
-
----
-
 # Data Analysis Project
 
 ## Overview
@@ -20,9 +16,6 @@ The goal is to extract meaningful insights from raw data using **Python, SQL, an
   * **Customer ID, Age, Gender**
   * **Product Category, Purchase Amount**
   * **Date, Location, Payment Method**
-
-*(Dataset source can be mentioned if public — e.g., Kaggle or company-provided.)*
-
 ---
 
 ## Tools & Technologies
