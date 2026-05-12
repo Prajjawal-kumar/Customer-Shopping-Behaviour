@@ -1,136 +1,114 @@
-# Data Analysis Project
+# Customer Shopping Behaviour Analysis
 
-## Overview
+> End-to-end data analysis project — from raw transactions to a stakeholder-ready Power BI dashboard — uncovering revenue drivers, customer segments, and category performance across 3,900+ records.
 
-This project demonstrates the **end-to-end data analysis process**, from data exploration to visualization and reporting.
-The goal is to extract meaningful insights from raw data using **Python, SQL, and Power BI**, and communicate the findings through an **interactive dashboard and presentation report**.
+---
+
+## Dashboard Preview
+
+<img width="1295" height="696" alt="Customer_shppoing_behavoiur_dashboard" src="https://github.com/user-attachments/assets/f5891ca3-7f78-48e6-8bdd-437e8c6fba14" />
+
+
+**Key Metrics at a Glance:**
+- 3.9K customers analysed
+- $59.76 average purchase amount
+- 3.75 average review rating
+- Clothing dominates both revenue (~$100K) and sales volume (~1,700 units)
+- Young Adults are the highest-revenue age group, followed closely by Middle-aged customers
+- 73% of customers are non-subscribers — a significant untapped retention opportunity
+
+---
+
+## Problem Statement
+
+Retail businesses often struggle to identify *which* customer segments and product categories drive the most value. This project analyses customer transaction data to answer:
+- Which product categories generate the most revenue?
+- Which age groups spend the most?
+- What is the impact of subscription status on purchasing behaviour?
 
 ---
 
 ## Dataset
 
-* The dataset used in this project contains records related to customer behavior, sales, and transactions.
-* Format: `.csv` file
-* Key features include:
+- **Records:** 3,900+ customer transactions
+- **Format:** `.csv`
+- **Key fields:** Customer ID, Age, Gender, Product Category, Purchase Amount, Review Rating, Subscription Status, Shipping Type, Payment Method
 
-  * **Customer ID, Age, Gender**
-  * **Product Category, Purchase Amount**
-  * **Date, Location, Payment Method**
 ---
 
 ## Tools & Technologies
 
-* **Python** (for data cleaning and EDA)
-
-  * Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`
-* **MySQL** (for running SQL queries and data extraction)
-* **Power BI** (for dashboard creation and visualization)
-* **Gamma App** (for generating presentation slides)
-* **Jupyter Notebook / VS Code** (for coding and documentation)
-
----
-
-## Steps & Workflow
-
-1. **Data Loading & Inspection**
-
-   * Import dataset using Pandas
-   * Check structure, null values, and data types
-
-2. **Data Cleaning**
-
-   * Handle missing values and duplicates
-   * Format dates, normalize categories, and remove inconsistencies
-
-3. **Exploratory Data Analysis (EDA)**
-
-   * Perform descriptive statistics
-   * Visualize data trends and relationships using Matplotlib & Seaborn
-
-4. **SQL Queries (MySQL)**
-
-   * Import the cleaned dataset into MySQL
-   * Run analytical queries such as:
-
-     * Total sales per category
-     * Top customers by revenue
-     * Monthly trends
-
-5. **Power BI Dashboard**
-
-   * Connect Power BI to the MySQL database
-   * Create interactive visuals:
-
-     * Sales by region
-     * Product performance
-     * Customer segmentation
-
-6. **Report & Presentation**
-
-   * Summarize findings in a structured report
-   * Use **Gamma App** to create a visual, AI-generated PPT presentation highlighting insights
+| Tool | Purpose |
+|------|---------|
+| Python (Pandas, NumPy, Matplotlib) | Data cleaning, EDA |
+| MySQL | SQL queries and data extraction |
+| Power BI | Interactive dashboard |
+| VS Code | Development environment |
 
 ---
 
-## Dashboard Overview
+## Key Findings
 
-The Power BI dashboard includes:
-
-* **KPIs:** Total Sales, Average Purchase Value, Customer Count
-* **Visuals:** Bar charts, Line charts, and Donut charts
-* **Filters:** Date range, Product category, Region
-
-*(You can attach a dashboard screenshot here)*
+- **Clothing** is the top-performing category — highest in both revenue (~$100K) and sales volume (~1,700 units)
+- **Young Adults** generate the most revenue across all age groups, with Middle-aged customers a close second
+- **73% of customers are non-subscribers**, representing a major retention and loyalty programme opportunity
+- Wrote **15+ SQL queries** to break down revenue by category, age group, and demographics
+- Built an **8-KPI Power BI dashboard** with cross-filter slicers for subscription status, gender, category, and shipping type
 
 ---
 
-## Results & Insights
+## Dashboard Features
 
-* Identified key customer segments driving majority of revenue
-* Discovered seasonal patterns affecting sales
-* Recommended marketing focus areas for underperforming regions
+- **KPIs:** Total customers, average purchase amount, average review rating
+- **Visuals:** Donut chart (subscription split), bar charts (revenue & sales by category), horizontal bars (revenue & sales by age group)
+- **Filters:** Subscription status, gender, product category, shipping type
+
+---
+
+## Project Structure
+
+```
+customer-shopping-behaviour/
+│
+├── data/
+│   └── customer_data.csv
+│
+├── notebooks/
+│   └── eda_analysis.ipynb
+│
+├── sql/
+│   └── queries.sql
+│
+├── dashboard/
+│   └── customer_behaviour.pbix
+│
+└── README.md
+```
 
 ---
 
 ## How to Run
 
 1. **Clone the repository**
-
    ```bash
-   git clone https://github.com/yourusername/data-analysis-project.git
-   cd data-analysis-project
+   git clone https://github.com/Prajjawal-kumar/Customer-Shopping-Behaviour.git
+   cd Customer-Shopping-Behaviour
    ```
 
-2. **Install dependencies**
-
+2. **Install Python dependencies**
    ```bash
-   pip install -r requirements.txt
+   pip install pandas numpy matplotlib
    ```
 
-3. **Run Python scripts or Jupyter Notebook**
-
+3. **Run the notebook**
    ```bash
-   jupyter notebook
+   jupyter notebook notebooks/eda_analysis.ipynb
    ```
 
-   Open the `.ipynb` file and execute cells step-by-step.
+4. **SQL Analysis**
+   - Import `customer_data.csv` into MySQL
+   - Run queries from `sql/queries.sql`
 
-4. **Import data to MySQL**
-
-   * Create a database (e.g., `data_analysis_db`)
-   * Import the cleaned CSV file
-   * Run SQL queries provided in `sql_queries.sql`
-
-5. **Open Power BI dashboard**
-
-   * Load the `.pbix` file
-   * Refresh data connection
-
-6. **View presentation**
-
-   * Open the Gamma presentation link (included in the report folder)
-
----
-
-
-
+5. **Power BI Dashboard**
+   - Open `dashboard/customer_behaviour.pbix` in Power BI Desktop
+   - Refresh data connection if needed
